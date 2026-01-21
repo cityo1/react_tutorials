@@ -23,7 +23,7 @@ const App = () => {
         <Controller handleSetCount={handleSetCount} />
       </section> */}
       {/* <UseEffect /> */}
-      <p>수정 테스트</p>
+      <p>수정 테스트2</p>
       <UseRef />
     </div>
   );
