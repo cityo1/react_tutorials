@@ -30,7 +30,6 @@ const UseEffect = () => {
 
   const [showTimer, setShowTimer] = useState(false);
   // console.log(showTimer);
-  // console.log('start timer');
 
   return (
     <div>

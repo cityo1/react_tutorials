@@ -3,8 +3,16 @@ import {navItems, authLink} from '../../constants/data'
 import { Link } from 'react-router-dom'
 import './header.css'
 import ModeCtrl from './ModeCtrl'
+import { useState } from 'react'
+import { X, Menu } from 'lucide-react'
+
 
 const Header = () => {
+  const[mobileOpen, setMobileOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setMobileOpen(!mobileOpen)
+  }
   return (
     <nav className='sticky top-0 z-50 border-b border-neutral-700/80 backdrop-blur-lg'>
       <div className='container relative'>
@@ -34,6 +42,11 @@ const Header = () => {
               </Link>))
             }
             <ModeCtrl />
+          </div>
+          <div className='lg:hidden flex justify-end'>
+          <button onClick={toggleMenu}>
+            {mobileOpen ? <X /> : <Menu />}
+          </button>
           </div>
         </div>
       </div>
