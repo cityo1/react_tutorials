@@ -17,14 +17,13 @@ const Timer = () => {
       setMin(min);
       setSec(sec);
 
-      console.log('시간은 흘러갑니다.');
     }, 1000);
 
     return () => {
       // 클린업
       clearInterval(timer);
     };
-  });
+  },[]);
 
   return (
     <div>

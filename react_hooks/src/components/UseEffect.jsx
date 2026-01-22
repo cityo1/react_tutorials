@@ -1,16 +1,7 @@
-import { useEffect } from 'react';
 import { useState } from 'react';
 import Timer from './Timer';
 
 const UseEffect = () => {
-  //   const [count, setCount] = useState(0);
-  //   const [text, setText] = useState('');
-  //   const handleCountUpdate = () => {
-  //     setCount(count + 1);
-  //   };
-  //   const handleInputchange = (e) => {
-  //     setText(e.target.value);
-  //   };
 
   // useEffect(() => {
   //   console.log('초기 렌더링, 업데이트 시 렌더링');
@@ -29,17 +20,9 @@ const UseEffect = () => {
   // }, [text]);
 
   const [showTimer, setShowTimer] = useState(false);
-  // console.log(showTimer);
 
   return (
     <div>
-      {/* <span>Count: {count}</span>
-      <br />
-      <button onClick={handleCountUpdate}>update</button>
-      <br />
-      <input type="text" value={text} onChange={handleInputchange} />
-      <br />
-      <span>{text}</span> */}
       {showTimer && <Timer />}
       <button
         onClick={() => {

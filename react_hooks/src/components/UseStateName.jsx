@@ -1,18 +1,18 @@
 import { useState } from 'react';
 
 const UseStateName = () => {
-  const [names, setNames] = useState(['한창호']);
+  const [names, setNames] = useState(['가나다', '라마바']);
   const [input, setInput] = useState('');
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
-  };
 
   const handleUpload = () => {
     setNames((prev) => {
-      console.log(prev);
       return [input, ...prev];
     });
-  };
+  }
+
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+  }
 
   return (
     <div>
@@ -30,10 +30,10 @@ const UseStateName = () => {
         className="border border-solid"
       />
       {names.map((name, index) => {
-        return <p key={index}>{name}</p>;
+        return <p key={index}>{name}</p>
       })}
     </div>
   );
-};
+}
 
 export default UseStateName;
