@@ -10,16 +10,15 @@ const UseState = () => {
     setCount(count + 1);
   };
 
-  console.log('상태 변경');
+  console.log(count);
 
   return (
-    <div className="text-xl">
+    <div>
       <span>Count: {count}</span>
       <br />
       <input
         type="submit"
         value="Count Up"
-        className="border border-solid"
         onClick={handleClick}
       />
     </div>

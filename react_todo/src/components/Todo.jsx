@@ -20,5 +20,4 @@ const Todo = ({task, editTodo, deleteTodo, toggleComplete}) => {
     </div>
   )
 }
-
 export default Todo

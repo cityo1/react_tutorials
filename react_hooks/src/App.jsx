@@ -15,16 +15,20 @@ const App = () => {
   // };
   return (
     <div>
-      {/* <h1>Counter</h1>
-      <section>
-        <Viewer count={count} />
-      </section>
-      <section>
-        <Controller handleSetCount={handleSetCount} />
-      </section> */}
-      {/* <UseEffect /> */}
-      <UseRef />
+      {/* <UseState /> */}
+      <UseStateName />
     </div>
+    // <div>
+    //   {/* <h1>Counter</h1>
+    //   <section>
+    //     <Viewer count={count} />
+    //   </section>
+    //   <section>
+    //     <Controller handleSetCount={handleSetCount} />
+    //   </section> */}
+    //   {/* <UseEffect /> */}
+    //   <UseRef />
+    // </div>
   );
 };
 
