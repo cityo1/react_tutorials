@@ -6,8 +6,11 @@ const App = () => {
   return (
     <>
       <UseState />
+      <br />
       <UseStateName /> 
+      <br />
       <UseEffect />
+      <br />
       <UseRef />
     </>
   );

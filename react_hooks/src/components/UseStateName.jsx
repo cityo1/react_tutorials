@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const UseStateName = () => {
-  const [names, setNames] = useState(['가나다', '라마바']);
+  const [names, setNames] = useState(['홍길동']);
   const [input, setInput] = useState('');
 
   const handleUpload = () => {

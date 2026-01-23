@@ -39,7 +39,6 @@ const UseRef = () => {
       <p>State: {count}</p>    
       <p>Ref: {countRef.current}</p>
       <p>Var: {countVar}</p>
-      <br />
       <button onClick={increaseState}>State Up</button>
       <button onClick={increaseRef}>Ref Up</button>
       <button onClick={increaseVar}>Var Up</button>
